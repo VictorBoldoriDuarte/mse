@@ -236,17 +236,6 @@ Enquanto não existirem, o site mostra placeholders elegantes (nada quebra). Nom
 
 **Já pronto na página (on-page):** `<title>`/description/keywords, **Open Graph** (prévia no WhatsApp/Facebook), **Twitter Card**, `canonical`, **geo** (Campo Grande — MS), `robots.txt`, `sitemap.xml`, `alt` nas imagens e **dados estruturados JSON-LD** (`LocalBusiness` com coordenadas e `hasMap`, `Organization`, `ItemList`, `BreadcrumbList`, `FAQPage`).
 
-**⚠️ Ajuste os dados reais em [`index.html`](index.html):**
-- Domínio `https://www.multishoweventos.com.br/` (e o mesmo em `robots.txt` e `sitemap.xml`).
-- No JSON-LD `LocalBusiness`: falta **`streetAddress` (rua/número) e `postalCode` (CEP)** — preencha para melhorar a ficha.
-- Confira `telephone`, `openingHoursSpecification` e a lista de `areaServed`.
-
-**Para de fato ranquear bem** (nenhuma tag garante sozinha — depende de fatores externos):
-1. **Google Meu Negócio / Perfil da Empresa** — o que mais pesa em buscas locais tipo "painel de led em Campo Grande".
-2. **Avaliações reais** no Google (nota + comentário).
-3. **Search Console** — cadastre o site e envie o `sitemap.xml`.
-4. **Backlinks** — Instagram, parceiros (buffets, espaços de festa), diretórios locais.
-5. **Conteúdo contínuo** — páginas/posts por serviço e por cidade.
 
 **Self-host das fontes (opcional, deixa ainda mais rápido):** as fontes (Sora/Inter) já têm fallback do sistema. Para não depender do Google Fonts, baixe os `.woff2` em fonts.google.com, coloque em `assets/fonts/` e troque o `<link>` do Google por `@font-face` locais.
 
