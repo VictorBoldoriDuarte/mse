@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="MSE — Multi Show Eventos">
+  <defs>
+    <linearGradient id="gY" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#FFD21A"/><stop offset=".55" stop-color="#FFD21A" stop-opacity=".5"/><stop offset="1" stop-color="#FFD21A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gG" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#16C062"/><stop offset=".55" stop-color="#16C062" stop-opacity=".5"/><stop offset="1" stop-color="#16C062" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gR" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E4262B"/><stop offset=".55" stop-color="#E4262B" stop-opacity=".5"/><stop offset="1" stop-color="#E4262B" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="beamBlur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="letterGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- CANHÕES DE LUZ (se movimentam) -->
+  <g filter="url(#beamBlur)" style="mix-blend-mode:screen">
+    <polygon points="242,190 258,190 280,44 220,44" fill="url(#gY)" opacity=".9">
+      <animateTransform attributeName="transform" type="rotate"
+        values="-30 250 190; -6 250 190; -30 250 190" dur="6s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    </polygon>
+    <polygon points="292,190 308,190 332,38 268,38" fill="url(#gG)" opacity=".95">
+      <animateTransform attributeName="transform" type="rotate"
+        values="14 300 190; -14 300 190; 14 300 190" dur="7.5s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    </polygon>
+    <polygon points="342,190 358,190 380,44 320,44" fill="url(#gR)" opacity=".9">
+      <animateTransform attributeName="transform" type="rotate"
+        values="6 350 190; 30 350 190; 6 350 190" dur="8.5s" repeatCount="indefinite"
+        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.42 0 0.58 1;0.42 0 0.58 1"/>
+    </polygon>
+  </g>
+
+  <!-- MSE -->
+  <text x="300" y="252" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
+        font-weight="bold" font-size="150" letter-spacing="6"
+        fill="#0A0B0E" stroke="#F4F4F4" stroke-width="4.5" paint-order="stroke"
+        filter="url(#letterGlow)">MSE</text>
+
+  <!-- MULTI SHOW EVENTOS -->
+  <text x="300" y="300" text-anchor="middle" font-family="Georgia,'Times New Roman',serif"
+        font-weight="bold" font-size="37" letter-spacing="3.5"
+        fill="#0A0B0E" stroke="#F4F4F4" stroke-width="2" paint-order="stroke">MULTI SHOW EVENTOS</text>
+</svg>

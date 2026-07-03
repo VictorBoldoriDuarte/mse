@@ -1,0 +1,12 @@
+{
+  "name": "MSE — Multi Show Eventos",
+  "short_name": "MSE Eventos",
+  "description": "Painéis de LED, iluminação cênica, canhões de luz e som profissional para eventos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050609",
+  "theme_color": "#050609",
+  "icons": [
+    { "src": "assets/img/logo2.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
