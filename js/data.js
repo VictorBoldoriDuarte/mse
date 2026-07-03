@@ -1,13 +1,13 @@
 const eventos = [
-  { titulo: "Show de Clayton & Romário", descricao: "Palco completo com painel de LED, luz para o show ao vivo.", servico: "Show ao vivo", imagem: "assets/eventos/clayton-romario.jpg", video: "assets/video/clayton-romario.mp4", instagram: "https://www.instagram.com/reel/DHhqPpWNeus/", tipo: "reel" },
-  { titulo: "Evento Bonamigo Sementes", descricao: "Mais um evento entregue com excelência.", servico: "Post no Instagram", imagem: "assets/eventos/bonamigo-sementes.jpg", instagram: "https://www.instagram.com/p/DYCe9NlDs0P/", tipo: "post" },
-  { titulo: "Entrega em Campo Grande", descricao: "Compromisso com qualidade e perfeição em cada evento.", servico: "Vídeo", imagem: "assets/eventos/reel-campo-grande.jpg", video: "assets/video/reel-campo-grande.mp4", instagram: "https://www.instagram.com/reel/DX7_a0iM8Lo/", tipo: "reel" },
-  { titulo: "Casamento com painel de LED", descricao: "Cenário visual elegante para momentos inesquecíveis.", servico: "Painel LED + iluminação", imagem: "assets/eventos/evento-01.jpg" },
-  { titulo: "Festa de 15 anos", descricao: "Luzes, movimento e impacto para uma entrada marcante.", servico: "Canhões de luz", imagem: "assets/eventos/evento-02.jpg" },
-  { titulo: "Evento corporativo", descricao: "Comunicação visual profissional com telão de LED.", servico: "Painel LED", imagem: "assets/eventos/evento-03.jpg" },
-  { titulo: "Show com estrutura de luz e som", descricao: "Palco completo com presença e energia para o público.", servico: "Luz + som profissional", imagem: "assets/eventos/evento-04.jpg" },
-  { titulo: "Formatura com pista iluminada", descricao: "Pista de LED e efeitos para uma noite inesquecível.", servico: "Pista LED + efeitos", imagem: "assets/eventos/evento-05.jpg" },
-  { titulo: "Aniversário com efeitos visuais", descricao: "Ambiente transformado com cor, luz e movimento.", servico: "Iluminação cênica", imagem: "assets/eventos/evento-06.jpg" }
+  { titulo: "Show de Clayton & Romário", descricao: "Palco completo com painel de LED, luz para o show ao vivo.", servico: "Show ao vivo", imagem: "", video: "assets/video/clayton-romario.mp4", instagram: "https://www.instagram.com/reel/DHhqPpWNeus/", tipo: "reel" },
+  { titulo: "Evento Bonamigo Sementes", descricao: "Mais um evento entregue com excelência.", servico: "Post no Instagram", imagem: "", instagram: "https://www.instagram.com/p/DYCe9NlDs0P/", tipo: "post" },
+  { titulo: "Entrega em Campo Grande", descricao: "Compromisso com qualidade e perfeição em cada evento.", servico: "Vídeo", imagem: "", video: "assets/video/reel-campo-grande.mp4", instagram: "https://www.instagram.com/reel/DX7_a0iM8Lo/", tipo: "reel" },
+  { titulo: "Casamento com painel de LED", descricao: "Cenário visual elegante para momentos inesquecíveis.", servico: "Painel LED + iluminação", imagem: "" },
+  { titulo: "Festa de 15 anos", descricao: "Luzes, movimento e impacto para uma entrada marcante.", servico: "Canhões de luz", imagem: "" },
+  { titulo: "Evento corporativo", descricao: "Comunicação visual profissional com telão de LED.", servico: "Painel LED", imagem: "" },
+  { titulo: "Show com estrutura de luz e som", descricao: "Palco completo com presença e energia para o público.", servico: "Luz + som profissional", imagem: "" },
+  { titulo: "Formatura com pista iluminada", descricao: "Pista de LED e efeitos para uma noite inesquecível.", servico: "Pista LED + efeitos", imagem: "" },
+  { titulo: "Aniversário com efeitos visuais", descricao: "Ambiente transformado com cor, luz e movimento.", servico: "Iluminação cênica", imagem: "" }
 ];
 
 const contratacoes = [

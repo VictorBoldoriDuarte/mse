@@ -4,6 +4,7 @@ const CONFIG = {
   mensagem: "Olá! Gostaria de solicitar um orçamento para meu evento com a Multi Show Eventos.",
   instagram: "https://www.instagram.com/multishowled/",
 
+  heroVideo: "",
   gaId: "",
   metaPixelId: ""
 };
@@ -320,8 +321,8 @@ function setupLightbox() {
 
 function setupHeroVideo() {
   const v = document.getElementById("heroVideo");
-  if (!v) return;
-  const src = "assets/video/hero.mp4";
+  if (!v || !CONFIG.heroVideo) return;
+  const src = CONFIG.heroVideo;
   const test = document.createElement("video");
   test.preload = "metadata";
   test.onloadedmetadata = () => {

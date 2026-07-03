@@ -431,7 +431,7 @@ ul { list-style: none; }
 .footer__inner { display: flex; flex-direction: column; align-items: center; gap: 14px; }
 .footer__logo { height: 40px; width: auto; opacity: .9; }
 .footer__tag { color: var(--gray-metal); max-width: 520px; font-size: .95rem; }
-.footer__copy { color: rgba(136,139,137,.6); font-size: .82rem; }
+.footer__copy { color: var(--gray-metal); font-size: .82rem; }
 
 .wa-float {
   position: fixed; right: 20px; bottom: 22px; z-index: 200;
