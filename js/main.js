@@ -14,18 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
   setupMenu();
   setupHeaderScroll();
   renderEventos();
-  renderContratacoes();
   renderDepoimentos();
   renderPacotes();
-  renderCidades();
+  renderEstados();
   initCarousels();
   setupCounters();
   setupQuoteForm();
-  setupBeforeAfter();
   setupLightbox();
   setupHeroVideo();
   setupAnalytics();
   setupReveal();
+  setupFaq();
   const y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 });
@@ -80,33 +79,18 @@ function renderEventos() {
     return `
     <article class="event${mediaClass}"${ev.video ? ` data-video="${encodeURI(ev.video)}"` : ""}${embed ? ` data-embed="${escapeHtml(embed)}"` : ""}${ev.imagem ? ` data-img="${encodeURI(ev.imagem)}"` : ""} data-title="${escapeHtml(ev.titulo)}" tabindex="0" role="button" aria-label="Abrir ${escapeHtml(ev.titulo)}">
       <div class="event__media">
-        <span class="event__tag">${escapeHtml(ev.servico)}</span>
-        <span class="event__ph">${escapeHtml(ev.titulo)}</span>
-        ${hasMedia ? `<span class="event__play" aria-hidden="true">${isVideo ? "▶" : "＋"}</span>` : ""}
         ${ev.imagem ? `<img src="${encodeURI(ev.imagem)}" alt="${escapeHtml(ev.titulo)}" loading="lazy" onerror="this.hidden=true">` : ""}
-      </div>
-      <div class="event__body">
-        <h3 class="event__title">${escapeHtml(ev.titulo)}</h3>
-        <p class="event__desc">${escapeHtml(ev.descricao)}</p>
+        <span class="event__tag">${escapeHtml(ev.servico)}</span>
+        ${hasMedia ? `<span class="event__play" aria-hidden="true">${isVideo ? "▶" : "＋"}</span>` : ""}
+        <div class="event__overlay">
+          <h3 class="event__title">${escapeHtml(ev.titulo)}</h3>
+          <p class="event__desc">${escapeHtml(ev.descricao)}</p>
+        </div>
       </div>
     </article>`;
   }).join("");
 }
 
-function renderContratacoes() {
-  const track = document.getElementById("jobsTrack");
-  if (!track || typeof contratacoes === "undefined") return;
-  track.innerHTML = contratacoes.map(c => {
-    const open = /agenda/i.test(c.status);
-    return `
-      <article class="job">
-        <span class="job__status ${open ? "status--open" : "status--done"}">${escapeHtml(c.status)}</span>
-        <h3 class="job__event">${escapeHtml(c.evento)}</h3>
-        ${c.local ? `<p class="job__local">${escapeHtml(c.local)}</p>` : ""}
-        <p class="job__service">${escapeHtml(c.servico)}</p>
-      </article>`;
-  }).join("");
-}
 
 function renderDepoimentos() {
   const wrap = document.getElementById("testimonials");
@@ -147,10 +131,10 @@ function renderPacotes() {
   }).join("");
 }
 
-function renderCidades() {
-  const wrap = document.getElementById("cities");
-  if (!wrap || typeof cidades === "undefined") return;
-  wrap.innerHTML = cidades.map(c => `<li>${escapeHtml(c)}</li>`).join("");
+function renderEstados() {
+  const wrap = document.getElementById("states");
+  if (!wrap || typeof estados === "undefined") return;
+  wrap.innerHTML = estados.map(estado => `<li>${escapeHtml(estado)}</li>`).join("");
 }
 
 function initCarousels() {
@@ -254,14 +238,6 @@ function setupQuoteForm() {
   });
 }
 
-function setupBeforeAfter() {
-  const ba = document.getElementById("ba");
-  const range = document.getElementById("baRange");
-  if (!ba || !range) return;
-  const update = () => ba.style.setProperty("--pos", range.value + "%");
-  range.addEventListener("input", update);
-  update();
-}
 
 function setupLightbox() {
   const lb = document.getElementById("lightbox");
@@ -366,6 +342,13 @@ function setupReveal() {
     entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add("is-visible"); io.unobserve(en.target); } });
   }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
   items.forEach(i => io.observe(i));
+}
+
+function setupFaq() {
+  const items = document.querySelectorAll(".faq__item");
+  items.forEach(d => d.addEventListener("toggle", () => {
+    if (d.open) items.forEach(o => { if (o !== d) o.open = false; });
+  }));
 }
 
 function escapeHtml(str = "") {

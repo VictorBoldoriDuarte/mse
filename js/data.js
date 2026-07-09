@@ -1,21 +1,8 @@
 const eventos = [
-  { titulo: "Show de Clayton & Romário", descricao: "Palco completo com painel de LED, luz para o show ao vivo.", servico: "Show ao vivo", imagem: "", video: "assets/video/clayton-romario.mp4", instagram: "https://www.instagram.com/reel/DHhqPpWNeus/", tipo: "reel" },
-  { titulo: "Evento Bonamigo Sementes", descricao: "Mais um evento entregue com excelência.", servico: "Post no Instagram", imagem: "", instagram: "https://www.instagram.com/p/DYCe9NlDs0P/", tipo: "post" },
-  { titulo: "Entrega em Campo Grande", descricao: "Compromisso com qualidade e perfeição em cada evento.", servico: "Vídeo", imagem: "", video: "assets/video/reel-campo-grande.mp4", instagram: "https://www.instagram.com/reel/DX7_a0iM8Lo/", tipo: "reel" },
-  { titulo: "Casamento com painel de LED", descricao: "Cenário visual elegante para momentos inesquecíveis.", servico: "Painel LED + iluminação", imagem: "" },
-  { titulo: "Festa de 15 anos", descricao: "Luzes, movimento e impacto para uma entrada marcante.", servico: "Canhões de luz", imagem: "" },
-  { titulo: "Evento corporativo", descricao: "Comunicação visual profissional com telão de LED.", servico: "Painel LED", imagem: "" },
-  { titulo: "Show com estrutura de luz e som", descricao: "Palco completo com presença e energia para o público.", servico: "Luz + som profissional", imagem: "" },
-  { titulo: "Formatura com pista iluminada", descricao: "Pista de LED e efeitos para uma noite inesquecível.", servico: "Pista LED + efeitos", imagem: "" },
-  { titulo: "Aniversário com efeitos visuais", descricao: "Ambiente transformado com cor, luz e movimento.", servico: "Iluminação cênica", imagem: "" }
-];
-
-const contratacoes = [
-  { evento: "Evento social", local: "Campo Grande · MS", servico: "Painel de LED + iluminação", status: "Realizado" },
-  { evento: "Formatura", local: "Dourados · MS", servico: "Som profissional + canhões de luz", status: "Realizado" },
-  { evento: "Casamento", local: "Três Lagoas · MS", servico: "Painel LED + iluminação cênica", status: "Montagem concluída" },
-  { evento: "Aniversário", local: "A definir", servico: "Pista LED + efeitos visuais", status: "Agenda aberta" },
-  { evento: "Evento corporativo", local: "A definir", servico: "Telão de LED + som", status: "Agenda aberta" }
+  { titulo: "Evento Bonamigo Sementes", descricao: "Totens de LED e estrutura visual para a marca, em Campo Grande.", servico: "Totens de LED", imagem: "assets/eventos/painel-1.jpg", video: "assets/video/reel-campo-grande.mp4", instagram: "https://www.instagram.com/reel/DX7_a0iM8Lo/", tipo: "reel" },
+  { titulo: "Show de Clayton & Romário", descricao: "Palco completo com painel de LED, luz e som.", servico: "Reel · Show", imagem: "assets/eventos/clayton-romario.jpg", video: "assets/video/clayton-romario.mp4", instagram: "https://www.instagram.com/reel/DHhqPpWNeus/", tipo: "reel" },
+  { titulo: "Ativação Hyundai", descricao: "Totens de LED e moving-heads na ativação de marca.", servico: "Ativação", imagem: "assets/eventos/painel-2.jpg" },
+  { titulo: "Painel floral iluminado", descricao: "Parede de LED com cenografia e iluminação cênica.", servico: "Painel de LED", imagem: "assets/eventos/painel-central.jpg" }
 ];
 
 const depoimentos = [
@@ -45,7 +32,6 @@ const pacotes = [
   }
 ];
 
-const cidades = [
-  "Campo Grande", "Dourados", "Três Lagoas", "Corumbá", "Ponta Porã",
-  "Sidrolândia", "Aquidauana", "Nova Andradina", "Naviraí", "Maracaju", "Coxim", "Rio Brilhante"
+const estados = [
+  "Mato Grosso do Sul", "Santa Catarina", "Rio Grande do Sul", "São Paulo", "Mato Grosso", "Paraná", "Minas Gerais"
 ];

@@ -19,7 +19,7 @@
 
 Landing page da **Multi Show Eventos**, com visual escuro no estilo palco/LED (feixes de luz animados, textura de painel, brilho neon). O foco é **gerar orçamentos pelo WhatsApp**. Feita em **HTML, CSS e JavaScript puro** — sem build e sem dependências.
 
-As **configurações** (WhatsApp, Instagram, Analytics) ficam em [`js/main.js`](js/main.js) e o **conteúdo** (eventos, depoimentos, pacotes, cidades) em [`js/data.js`](js/data.js).
+As **configurações** (WhatsApp, Instagram, Analytics) ficam em [`js/main.js`](js/main.js) e o **conteúdo** (eventos, depoimentos, pacotes, estados) em [`js/data.js`](js/data.js).
 
 ---
 
@@ -59,7 +59,7 @@ mse/
 │  └─ enhancements.css   # Componentes, rodapé/mapa, lightbox
 ├─ js/
 │  ├─ main.js            # Configurações (WhatsApp, Instagram, Analytics) + comportamento
-│  └─ data.js            # Conteúdo (eventos, depoimentos, pacotes, cidades)
+│  └─ data.js            # Conteúdo (eventos, depoimentos, pacotes, estados)
 └─ assets/
    ├─ img/               # Logos e favicon
    ├─ eventos/           # Fotos dos eventos e capas

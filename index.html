@@ -176,19 +176,30 @@
 
         <video class="hero__video" id="heroVideo" playsinline autoplay muted loop preload="none"></video>
         <div class="led-grid"></div>
-        <div class="beam beam--red beam--1"></div>
-        <div class="beam beam--green beam--2"></div>
-        <div class="beam beam--red beam--3"></div>
-        <div class="beam beam--green beam--4"></div>
+
+        <div class="led-back"></div>
+
+        <div class="rig">
+          <span class="mh mh--1"></span>
+          <span class="mh mh--2"></span>
+          <span class="mh mh--3"></span>
+          <span class="mh mh--4"></span>
+          <span class="mh mh--5"></span>
+          <span class="mh mh--6"></span>
+        </div>
+
         <div class="scan scan--red"></div>
         <div class="scan scan--green"></div>
         <div class="fog fog--1"></div>
         <div class="fog fog--2"></div>
+        <div class="stage-floor"></div>
         <div class="hero__glow"></div>
       </div>
 
       <div class="container hero__content">
-        <img class="hero__logo reveal" src="assets/mse-hero.svg" alt="MSE Multi Show Eventos" width="460" height="261" fetchpriority="high" />
+        <div class="hero__screen reveal">
+          <img class="hero__logo" src="assets/mse-hero.svg" alt="MSE Multi Show Eventos" width="460" height="261" fetchpriority="high" />
+        </div>
         <span class="hero__eyebrow reveal">Produção visual de alto padrão</span>
         <h1 class="hero__title reveal">
           Arte visual que transforma seu evento em <span class="grad">experiência</span>
@@ -229,6 +240,7 @@
             </div>
             <h3 class="service__title">Painéis de LED</h3>
             <p class="service__text">Telões de alta definição para palcos, cenários e comunicação visual ao vivo, com nitidez impecável.</p>
+            <a href="#" class="service__cta" data-wa data-wa-msg="Olá, MSE! Tenho interesse em Painéis de LED para o meu evento. Pode me passar um orçamento?">Pedir orçamento <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="card service reveal">
@@ -237,6 +249,7 @@
             </div>
             <h3 class="service__title">Canhões de luz</h3>
             <p class="service__text">Movimento, cor e intensidade para criar uma atmosfera única em qualquer ambiente.</p>
+            <a href="#" class="service__cta" data-wa data-wa-msg="Olá, MSE! Tenho interesse em Canhões de luz para o meu evento. Pode me passar um orçamento?">Pedir orçamento <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="card service reveal">
@@ -245,6 +258,7 @@
             </div>
             <h3 class="service__title">Iluminação cênica</h3>
             <p class="service__text">Projeto de luz sob medida para valorizar entradas, cerimônias e cada momento que merece destaque.</p>
+            <a href="#" class="service__cta" data-wa data-wa-msg="Olá, MSE! Tenho interesse em Iluminação cênica para o meu evento. Pode me passar um orçamento?">Pedir orçamento <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="card service reveal">
@@ -253,6 +267,7 @@
             </div>
             <h3 class="service__title">Som profissional</h3>
             <p class="service__text">Áudio de alta performance, com clareza e potência para eventos sociais e corporativos.</p>
+            <a href="#" class="service__cta" data-wa data-wa-msg="Olá, MSE! Tenho interesse em Som profissional para o meu evento. Pode me passar um orçamento?">Pedir orçamento <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
@@ -300,42 +315,13 @@
 
     <section class="section" id="eventos">
       <div class="container">
-        <header class="section__head section__head--row reveal">
-          <div>
-            <span class="section__tag">Portfólio</span>
-            <h2 class="section__title">Eventos que já ganharam vida com a Multi Show</h2>
-          </div>
-          <div class="carousel__nav">
-            <button class="carousel__btn" data-car="eventos" data-dir="-1" aria-label="Anterior">‹</button>
-            <button class="carousel__btn" data-car="eventos" data-dir="1" aria-label="Próximo">›</button>
-          </div>
-        </header>
-
-        <div class="carousel" data-carousel="eventos">
-          <div class="carousel__track" id="eventosTrack"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="antes-depois">
-      <div class="container ba__wrap">
         <header class="section__head reveal">
-          <span class="section__tag">Transformação</span>
-          <h2 class="section__title">Antes e depois</h2>
-          <p class="section__lead">Arraste e veja o ambiente ganhar vida com a MSE.</p>
+          <span class="section__tag">Portfólio</span>
+          <h2 class="section__title">Eventos que já ganharam vida com a Multi Show</h2>
+          <p class="section__lead">Projetos reais em LED, iluminação e som — toque para ver de perto.</p>
         </header>
 
-        <div class="ba reveal" id="ba">
-          <div class="ba__img ba__after">
-            <span class="ba__tag ba__tag--after">Depois</span>
-          </div>
-          <div class="ba__img ba__before" id="baBefore">
-            <span class="ba__tag ba__tag--before">Antes</span>
-          </div>
-          <div class="ba__handle" id="baHandle" aria-hidden="true"><span>‹ ›</span></div>
-          <input class="ba__range" id="baRange" type="range" min="0" max="100" value="50"
-                 aria-label="Comparar antes e depois do evento" />
-        </div>
+        <div class="events-grid" id="eventosTrack"></div>
       </div>
     </section>
 
@@ -347,25 +333,6 @@
           <p class="section__lead">A experiência começa antes do primeiro convidado chegar.</p>
         </header>
         <div class="testimonials" id="testimonials"></div>
-      </div>
-    </section>
-
-    <section class="section" id="contratacoes">
-      <div class="container">
-        <header class="section__head section__head--row reveal">
-          <div>
-            <span class="section__tag">Movimento</span>
-            <h2 class="section__title">Últimas montagens e contratações</h2>
-          </div>
-          <div class="carousel__nav">
-            <button class="carousel__btn" data-car="jobs" data-dir="-1" aria-label="Anterior">‹</button>
-            <button class="carousel__btn" data-car="jobs" data-dir="1" aria-label="Próximo">›</button>
-          </div>
-        </header>
-
-        <div class="carousel carousel--jobs" data-carousel="jobs">
-          <div class="carousel__track" id="jobsTrack"></div>
-        </div>
       </div>
     </section>
 
@@ -381,9 +348,9 @@
         </header>
 
         <div class="counters reveal">
-          <div class="counter"><strong data-count="500" data-suffix="+">0</strong><span>Eventos iluminados</span></div>
-          <div class="counter"><strong data-count="8" data-suffix=" anos">0</strong><span>De experiência</span></div>
-          <div class="counter"><strong data-count="30" data-suffix="+">0</strong><span>Cidades atendidas</span></div>
+          <div class="counter"><strong data-count="25000" data-suffix="+">0</strong><span>Eventos iluminados</span></div>
+          <div class="counter"><strong data-count="37" data-suffix=" anos">0</strong><span>De experiência</span></div>
+          <div class="counter"><strong data-count="125" data-suffix="+">0</strong><span>Cidades atendidas</span></div>
           <div class="counter"><strong data-count="100" data-suffix="%">0</strong><span>Foco no seu evento</span></div>
         </div>
 
@@ -396,15 +363,15 @@
       </div>
     </section>
 
-    <section class="section" id="cidades">
+    <section class="section" id="estados">
       <div class="container">
         <header class="section__head reveal">
           <span class="section__tag">Atendimento</span>
           <h2 class="section__title">Onde a MSE atende</h2>
-          <p class="section__lead">Levamos painel de LED, iluminação e som profissional para Campo Grande e região.</p>
+          <p class="section__lead">Levamos painel de LED, iluminação e som profissional para diversos estados do Brasil.</p>
         </header>
-        <ul class="cities reveal" id="cities" aria-label="Cidades atendidas"></ul>
-        <p class="cities__note reveal">Não encontrou sua cidade? Consulte — atendemos outras regiões sob demanda.</p>
+        <ul class="states reveal" id="states" aria-label="Estados atendidos"></ul>
+        <p class="states__note reveal">Não encontrou seu estado? Consulte — atendemos outras regiões sob demanda.</p>
       </div>
     </section>
 
@@ -426,7 +393,7 @@
           </details>
           <details class="faq__item">
             <summary>Qual a região atendida?</summary>
-            <p>Atendemos Campo Grande e região, além de outras cidades sob consulta. Fale com a gente informando o local do seu evento.</p>
+            <p>Atendemos em diversos estados do Brasil e avaliamos outras regiões sob consulta. Fale com a gente informando o local do seu evento.</p>
           </details>
           <details class="faq__item">
             <summary>Como faço um orçamento?</summary>
@@ -588,7 +555,7 @@
     "mainEntity": [
       { "@type": "Question", "name": "Quais tipos de evento vocês atendem?", "acceptedAnswer": { "@type": "Answer", "text": "Casamentos, festas de 15 anos, formaturas, aniversários, eventos corporativos, shows e confraternizações, com estrutura visual e sonora sob medida." } },
       { "@type": "Question", "name": "Vocês fazem a montagem e a desmontagem?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Nossa equipe técnica cuida da instalação, operação durante o evento e retirada dos equipamentos com total segurança." } },
-      { "@type": "Question", "name": "Qual a região atendida?", "acceptedAnswer": { "@type": "Answer", "text": "Atendemos Campo Grande e região, além de outras cidades sob consulta." } },
+      { "@type": "Question", "name": "Qual a região atendida?", "acceptedAnswer": { "@type": "Answer", "text": "Atendemos em diversos estados do Brasil e avaliamos outras regiões sob consulta." } },
       { "@type": "Question", "name": "Como faço um orçamento?", "acceptedAnswer": { "@type": "Answer", "text": "Pelo WhatsApp ou pelo formulário do site, informando o tipo de evento, a data e a cidade." } },
       { "@type": "Question", "name": "Com quanta antecedência devo reservar?", "acceptedAnswer": { "@type": "Answer", "text": "Quanto antes melhor, pois as datas mais procuradas esgotam rápido. Mesmo em cima da hora, consulte a agenda." } }
     ]
